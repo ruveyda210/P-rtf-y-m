@@ -1,0 +1,42 @@
+ <input type="email" name="email" placeholder="E-posta" required>
+
+            <textarea name="message" placeholder="Mesajiniz" required></textarea>
+
+            <button type="submit">Gonder</button>
+
+        </form>
+
+        {% if message %}
+            <p>Mesajiniz alindi!</p>
+        {% endif %}
+    </section>
+
+    <footer>
+        <p> 2026 Benim Portfoyum</p>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+    </footer>
+
+    <script>
+        function showProject(skill) {
+
+            let project = document.getElementById("project");
+
+            if (skill === "python") {
+                project.innerHTML =
+                    "Python ile gelistirdigim projeleri burada gorebilirsin.";
+            }
+
+            else if (skill === "web") {
+                project.innerHTML =
+                    "HTML, CSS ve Flask ile web siteleri gelistiriyorum.";
+            }
+
+            else if (skill === "ai") {
+                project.innerHTML =
+                    "Yapay zeka ve goruntu isleme uzerine calismalar yapiyorum.";
+            }
+        }
+    </script>
+
+</body>
+</html>
